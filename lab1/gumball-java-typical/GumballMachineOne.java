@@ -2,36 +2,34 @@
 
 public class GumballMachineOne extends GumballMachine
 {
-    private boolean has_quarter;
-
     public GumballMachineOne( int size )
     {
         // initialise instance variables
         this.num_gumballs = size;
-        this.has_quarter = false;
+        this.sum = 0;
     }
 
     public void insertCoin(int coin)
     {
         if ( coin == 25 )
-            this.has_quarter = true ;
-        else 
-            this.has_quarter = false ;
+			this.sum += 25 ;
+        else
+			System.out.println( "Invalid coin. Quarter ONLY." ) ;
     }
     
     public void turnCrank()
     {
-    	if ( this.has_quarter )
+    	if ( this.sum >= 25 )
     	{
     		if ( this.num_gumballs > 0 )
     		{
     			this.num_gumballs-- ;
-    			this.has_quarter = false ;
+    			this.sum -= 25 ;
     			System.out.println( "Thanks for your quarter.  Gumball Ejected!" ) ;
     		}
     		else
     		{
-    			System.out.println( "No More Gumballs!  Sorry, can't return your quarter." ) ;
+    			System.out.println( "No More Gumballs!  Sorry, can't return your coins." ) ;
     		}
     	}
     	else 

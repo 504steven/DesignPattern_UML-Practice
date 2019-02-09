@@ -20,7 +20,7 @@ public class Main {
 		System.out.println();
 
 		System.out.println("Show Case for gumballMachine type two, start with 5 gumball in the machine:");
-		GumballMachineTwo gumballMachineTwo = new GumballMachineTwo(5);
+		GumballMachine gumballMachineTwo = new GumballMachineTwo(5);
 		System.out.println(gumballMachineTwo);
 
 		gumballMachineTwo.insertCoin( 25 );
@@ -36,7 +36,7 @@ public class Main {
 		System.out.println();
 
 		System.out.println("Show Case for gumballMachine type three, start with 5 gumball in the machine:");
-		GumballMachineThree gumballMachineThree = new GumballMachineThree(5);
+		GumballMachine gumballMachineThree = new GumballMachineThree(5);
 		System.out.println(gumballMachineThree);
 
 		gumballMachineThree.insertCoin( 10 );
