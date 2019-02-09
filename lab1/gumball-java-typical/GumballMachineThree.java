@@ -1,8 +1,7 @@
  
 
-public class GumballMachineThree
+public class GumballMachineThree extends GumballMachine
 {
-    private int num_gumballs;
     private int sum;
 
     public int getSum() {
@@ -16,10 +15,10 @@ public class GumballMachineThree
         this.sum = 0;
     }
 
-    public void insertCoin(Coin coin)
+    public void insertCoin(int coin)
     {
-        if ( Coin.NICKEL.equals(coin) || Coin.DIME.equals(coin) || Coin.QUARTER.equals(coin)) {
-            this.sum += coin.getValue();
+        if ( coin == 25 || coin == 10 || coin == 5) {
+            this.sum += coin;
         }else {
             System.out.println( "Invalid coin. Only Nickel, Dime, Quarter are accepted." ) ;
         }

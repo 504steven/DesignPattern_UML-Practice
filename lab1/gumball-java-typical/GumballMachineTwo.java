@@ -1,9 +1,7 @@
  
 
-public class GumballMachineTwo
+public class GumballMachineTwo extends GumballMachine
 {
-
-    private int num_gumballs;
     private int numOfQuarter;
 
     public GumballMachineTwo( int size )
@@ -13,7 +11,7 @@ public class GumballMachineTwo
         this.numOfQuarter = 0;
     }
 
-    public void insertQuarter(int coin)
+    public void insertCoin(int coin)
     {
         if ( coin == 25 )
             this.numOfQuarter++;
