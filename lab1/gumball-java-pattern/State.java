@@ -1,9 +1,9 @@
-
+package lab_202.lab1_gumball_java_pattern;
 
 public interface State {
  
-	public void insertQuarter();
-	public void ejectQuarter();
+	public void insertCoin(int coin);
+	public void ejectCoin();
 	public void turnCrank();
 	public void dispense();
 }

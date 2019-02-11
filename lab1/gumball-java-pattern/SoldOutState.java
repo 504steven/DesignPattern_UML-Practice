@@ -1,4 +1,4 @@
-
+package lab_202.lab1_gumball_java_pattern;
 
 public class SoldOutState implements State {
     GumballMachine gumballMachine;
@@ -7,11 +7,11 @@ public class SoldOutState implements State {
         this.gumballMachine = gumballMachine;
     }
  
-	public void insertQuarter() {
-		System.out.println("You can't insert a quarter, the machine is sold out");
+	public void insertCoin(int coin) {
+		System.out.println("The machine is sold out。 You can't insert a coin。");
 	}
  
-	public void ejectQuarter() {
+	public void ejectCoin() {
 		System.out.println("You can't eject, you haven't inserted a quarter yet");
 	}
  

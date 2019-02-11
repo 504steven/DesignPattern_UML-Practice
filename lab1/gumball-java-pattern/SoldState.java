@@ -1,4 +1,4 @@
-
+package lab_202.lab1_gumball_java_pattern;
 
 public class SoldState implements State {
  
@@ -8,25 +8,25 @@ public class SoldState implements State {
         this.gumballMachine = gumballMachine;
     }
        
-	public void insertQuarter() {
-		System.out.println("Please wait, we're already giving you a gumball");
+	public void insertCoin(int coin) {
+		System.out.println("Please wait, as we already gave you a gumball");
 	}
  
-	public void ejectQuarter() {
-		System.out.println("Sorry, you already turned the crank");
+	public void ejectCoin() {
+		System.out.println("No coins left in the machine");
 	}
  
 	public void turnCrank() {
-		System.out.println("Turning twice doesn't get you another gumball!");
+		System.out.println("Turning twice won't get you another gumball!");
 	}
  
 	public void dispense() {
-		gumballMachine.releaseBall();
-		if (gumballMachine.getCount() > 0) {
-			gumballMachine.setState(gumballMachine.getNoQuarterState());
+		this.gumballMachine.releaseBall();
+		if (this.gumballMachine.getCount() > 0) {
+			this.gumballMachine.setState(this.gumballMachine.getNotEnoughState());
 		} else {
-			System.out.println("Oops, out of gumballs!");
-			gumballMachine.setState(gumballMachine.getSoldOutState());
+			System.out.println("Here is the last gumball!");
+			this.gumballMachine.setState(this.gumballMachine.getSoldOutState());
 		}
 	}
  
