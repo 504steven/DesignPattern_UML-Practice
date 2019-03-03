@@ -1,0 +1,1 @@
+I used chain of responsibility for the lab 4. The reason for choosing this pattern is that each customer party in wait list will take notice from restaraunt one by one, which is the similar to the chain element handling request one by one. 
