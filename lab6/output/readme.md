@@ -1,4 +1,4 @@
-#Five Guys
+# Five Guys
 ## the code utilized several design patterns of Composite, Decorator, Strategy.
 
 ### Composite was used to have Order, Burger, Fries and Topping as the same class to add into each other.
