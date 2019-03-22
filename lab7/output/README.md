@@ -1,1 +1,1 @@
-![alt text] (https://github.com/504steven/cmpe202/blob/master/lab7/output/screenshot%20print%20out.JPG)
+![alt text](https://github.com/504steven/cmpe202/blob/master/lab7/output/screenshot%20print%20out.JPG)
