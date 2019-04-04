@@ -1,2 +1,2 @@
 # Lab8-lime app
-This lab was orginally designed with composite and chain of responsibility pattern. I chose Decorator pattern to modify the Screen component display result as required. Also, added delete function to delete digit input in the credit card infor.
+This lab was orginally designed with composite and chain of responsibility pattern. I chose Decorator pattern to modify the Screen component display result to the required format. Decorator pattern is good for this case, since it only modifies a object's behavior without changing its own properties. Also, added delete function to delete digit input in the credit card infor.
